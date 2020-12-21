@@ -13,6 +13,8 @@ import {
   AngularFireObject,
 } from '@angular/fire/database';
 
+import { AuthService } from './services/auth.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -23,6 +25,7 @@ export class AppComponent {
   public fsPeaks$;
 
   constructor(
+    public auth: AuthService,
     private rtdb: AngularFireDatabase,
     private fs: AngularFirestore
   ) {}

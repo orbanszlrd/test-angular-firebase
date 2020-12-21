@@ -7,6 +7,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from 'src/environments/environment';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms';
     AngularFireDatabaseModule,
     AngularFirestoreModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
